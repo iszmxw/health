@@ -197,7 +197,7 @@ PHP_FUNCTION(bcm_cal_age)
     int isgender;
     float isheight;
     float isweight;
-    float isresistance;
+    int isresistance;
     int result;
 
     if (zend_parse_parameters(ZEND_NUM_ARGS() TSRMLS_CC, "llddd", &isage, &isgender, &isheight, &isweight, &isresistance) == FAILURE)
