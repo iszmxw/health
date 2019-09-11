@@ -223,7 +223,8 @@ PHP_FUNCTION(bcm_cal_age)
     infor.age = 33;
     infor.height = 168.5;
     infor.weight = 63.5;
-    infor.resistance = 800;
+    // infor.resistance = 800;
+    infor.resistance = isresistance;
 
     BCM_Cal(&infor);
     result = infor.TBW;
