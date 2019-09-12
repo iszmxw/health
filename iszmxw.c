@@ -228,5 +228,5 @@ PHP_FUNCTION(bcm_cal_age)
 
     BCM_Cal(&infor);
     result = infor.TBW;
-    php_printf("%ld", Z_LVAL_P(result));
+    RETURN_LONG(result);
 }
