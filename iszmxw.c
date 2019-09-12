@@ -195,21 +195,25 @@ PHP_FUNCTION(bcm_cal_age)
 {
     int isage;
     int isgender;
-    float isheight;
-    float isweight;
-    int isresistance;
+    double isheight;
+    double isweight;
+    double isresistance;
     int result;
 
-    if (zend_parse_parameters(ZEND_NUM_ARGS() TSRMLS_CC, "llddl", &isage, &isgender, &isheight, &isweight, &isresistance) == FAILURE)
+    if (zend_parse_parameters(ZEND_NUM_ARGS() TSRMLS_CC, "llddd", &isage, &isgender, &isheight, &isweight, &isresistance) == FAILURE)
     {
         return;
     }
 
-    // infor.age = isage;
-    // infor.height = isheight;
-    // infor.weight = isweight;
-    // infor.resistance = isresistance;
-    // infor.gender = male;
+    // infor.age = 33;
+    // infor.height = 168.5;
+    // infor.weight = 63.5;
+    // infor.resistance = 800;
+
+    infor.age = isage;
+    infor.height = isheight;
+    infor.weight = isweight;
+    infor.resistance = isresistance;
 
     if (isgender == 1)
     {
@@ -220,13 +224,7 @@ PHP_FUNCTION(bcm_cal_age)
         infor.gender = female;
     }
 
-    infor.age = 33;
-    infor.height = 168.5;
-    infor.weight = 63.5;
-    // infor.resistance = 800;
-    infor.resistance = isresistance;
-
     BCM_Cal(&infor);
     result = infor.TBW;
-    RETURN_LONG(result);
+    RETURN_DOUBLE(result);
 }
