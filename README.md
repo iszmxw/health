@@ -27,4 +27,4 @@ float TotalScore;//综合评分
 
 **具体文档地址。**
 
-(https://iszmxw.github.io/bcm/docs)[https://iszmxw.github.io/bcm/docs]
+[https://iszmxw.github.io/bcm/docs](https://iszmxw.github.io/bcm/docs)
