@@ -7,7 +7,6 @@
 > 需要`make -ldl`来安装编译模块</br>
 > `make -ldl`之前需要将so动态库放到系统当中</br>
 
-
 ```shell
 # su
 # echo /usr/local/lib > /etc/ld.so.conf.d/local.conf
