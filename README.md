@@ -4,7 +4,15 @@
 > 不知道PHP的其他版本调用会不会产生问题，需要自行检测</br>
 > 由于公司购买的是别家生产的电路板，在测量数据的时候需要用到别人的算法，但是别人又不愿意公开出来</br>
 > 于是打包编译了一个动态库来给我调用，在使用的时候由于调用的是动态库加载，（libbcm.so）</br>
-> 需要`make -ldl`来安装编译模块
+> 需要`make -ldl`来安装编译模块</br>
+> `make -ldl`之前需要将so动态库放到系统当中</br>
+
+```shell
+# su
+# echo /usr/local/lib > /etc/ld.so.conf.d/local.conf
+# cp libbcm.so /usr/local/lib
+# /sbin/ldconfig
+```
 
 **该动态库可以计算如下。**
 
