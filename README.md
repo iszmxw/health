@@ -24,3 +24,7 @@ float VFA;      //内脏脂肪指数
 float BodyAge;  //身体年龄
 float TotalScore;//综合评分
 ```
+
+**具体文档地址。**
+
+(https://iszmxw.github.io/bcm/docs)[https://iszmxw.github.io/bcm/docs]
