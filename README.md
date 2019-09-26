@@ -6,7 +6,6 @@
 > 于是打包编译了一个动态库来给我调用，在使用的时候由于调用的是动态库加载，（libbcm.so）</br>
 > 需要`make -ldl`来安装编译模块</br>
 > `make -ldl`之前需要将so动态库放到系统当中</br>
-> 具体文档地址：[https://iszmxw.github.io/bcm/docs](https://iszmxw.github.io/bcm/docs)
 
 ```shell
 # su
@@ -14,6 +13,8 @@
 # cp libbcm.so /usr/local/lib
 # /sbin/ldconfig
 ```
+
+> 具体文档地址：[https://iszmxw.github.io/bcm/docs](https://iszmxw.github.io/bcm/docs)
 
 **该动态库可以计算如下。**
 
