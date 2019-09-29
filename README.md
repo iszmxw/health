@@ -19,18 +19,18 @@
 **该动态库可以计算如下。**
 
 ```c
-float TBW;      //总水分重量
-float Protein;  //蛋白质
-float Minerals; //无机盐
-float BFM;      //脂肪重量
-float FFM;      //去脂体重
-float SM;       //骨骼肌
-float BMC;      //骨矿含量
+float TBW;      //总水分重量 (L)
+float Protein;  //蛋白质 (kg)
+float Minerals; //无机盐 (kg)
+float BFM;      //脂肪重量 (kg)
+float FFM;      //去脂体重 (kg)
+float SM;       //骨骼肌 (kg)
+float BMC;      //骨矿含量 (kg)
 float BMI;      //体格指数
-float PBF;      //体脂肪率
-float PBW;      //体水分率
-float BMR;      //基础代谢
-float VFA;      //内脏脂肪指数
+float PBF;      //体脂肪率 (%)
+float PBW;      //体水分率 (%)
+float BMR;      //基础代谢 (Kcal)
+float VFA;      //内脏脂肪指数 (cm^2)
 float BodyAge;  //身体年龄
 float TotalScore;//综合评分
 ```
